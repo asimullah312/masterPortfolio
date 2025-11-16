@@ -2,7 +2,7 @@
 
 // Website settings
 const settings = {
-  isSplash: true, // You selected yes
+  isSplash: true,
 };
 
 // SEO settings
@@ -192,6 +192,20 @@ const experience = {
   ],
 };
 
+// Contact Page (FIX: define this so export works)
+const contactPageData = {
+  contactSection: {
+    title: "Contact Me",
+    profile_image_path: "contactMail.png",
+    description: "You can reach me at asimullah312@gmail.com",
+  },
+  blogSection: {
+    title: "Blogs",
+    description: "Coming soon",
+    link: "",
+  },
+};
+
 // Export all
 export {
   settings,
@@ -202,7 +216,6 @@ export {
   degrees,
   certifications,
   experience,
-  competitiveSites, // Added to fix import error
-  contactPageData, // <-- Add this
-
+  competitiveSites,
+  contactPageData, // Now properly defined
 };
