@@ -1,40 +1,30 @@
-import React from "react";
-import "./Contact.css";
-import SocialMedia from "../../components/socialMedia/SocialMedia";
-import { contactInfo } from "../../portfolio";
-
-export default function Contact() {
-  return (
-    <div className="main contact-margin-top" id="contact">
-      <div className="contact-div-main">
-        <div className="contact-header">
-          <h1 className="heading contact-title">{contactInfo.title}</h1>
-          <p className="subTitle contact-subtitle">{contactInfo.subtitle}</p>
-
-          <div className="contact-text-div">
-            <a className="contact-detail" href={"tel:" + contactInfo.number}>
-              {contactInfo.number}
-            </a>
-            <br />
-            <br />
-            <a
-              className="contact-detail-email"
-              href={"mailto:" + contactInfo.email_address}
-            >
-              {contactInfo.email_address}
-            </a>
-            <br />
-            <br />
-            <SocialMedia />
-          </div>
-        </div>
-        <div className="contact-image-div">
-          <img
-            alt="Saad Working"
-            src={require("../../assets/images/contactMail.png")}
-          ></img>
-        </div>
-      </div>
-    </div>
-  );
-}
+// Contact Page
+const contactPageData = {
+  contactSection: {
+    title: "Contact Me",
+    profile_image_path: "profile.png", // Add your profile picture here in src/assets/images
+    description:
+      "I am available on GitHub and LinkedIn. You can send me an email, I will reply within 24 hours. I can assist in DevOps, CI/CD, Cloud, Docker, Kubernetes, Terraform, Jenkins, and Linux.",
+  },
+  blogSection: {
+    title: "Blogs",
+    subtitle: "I document my technical journey, tutorials, and project insights.",
+    link: "", // Add your blog link if you have one
+    avatar_image_path: "blogs_image.svg",
+  },
+  addressSection: {
+    title: "Address",
+    subtitle: "Peshawar, Pakistan",
+    locality: "Peshawar",
+    country: "Pakistan",
+    region: "Khyber Pakhtunkhwa",
+    postalCode: "",
+    streetAddress: "",
+    avatar_image_path: "address_image.svg",
+    location_map_link: "", // Optional Google Maps link
+  },
+  phoneSection: {
+    title: "Email",
+    subtitle: "asimullah312@gmail.com",
+  },
+};
