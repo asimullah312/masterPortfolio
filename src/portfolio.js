@@ -203,4 +203,6 @@ export {
   certifications,
   experience,
   competitiveSites, // Added to fix import error
+  contactPageData, // <-- Add this
+
 };
