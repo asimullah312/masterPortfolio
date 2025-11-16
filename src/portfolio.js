@@ -2,7 +2,7 @@
 
 // Website settings
 const settings = {
-  isSplash: true, // set to false to disable splash screen
+  isSplash: true, // You selected yes
 };
 
 // SEO settings
@@ -192,33 +192,34 @@ const experience = {
   ],
 };
 
-// Projects Page
-const projectsHeader = {
-  title: "Projects",
-  description:
-    "Here are some projects I've worked on involving DevOps, CI/CD, cloud, and automation.",
-};
-
 // Contact Page
 const contactPageData = {
   contactSection: {
     title: "Contact Me",
-    profile_image_path: "contact.png",
+    profile_image_path: "profile.png",
     description:
-      "I am available for DevOps internships, projects, and collaborations. You can reach me via email or social media.",
+      "Feel free to reach out to me via email or LinkedIn. I am open to internships and collaborations.",
   },
-  blogSection: {
-    title: "Blogs",
-    subtitle: "I write articles on DevOps, cloud, and automation.",
-  },
-  addressSection: {
-    title: "Address",
-    subtitle: "Peshawar, Pakistan",
-  },
-  phoneSection: {
-    title: "Phone Number",
-    subtitle: "+92 300 0000000",
-  },
+};
+
+// Projects Page
+const projectsHeader = {
+  title: "Projects",
+  description:
+    "Here are some projects I have worked on related to DevOps, automation, and cloud technologies.",
+};
+
+// Publications Page
+const publications = {
+  data: [
+    // Example publication
+    // {
+    //   id: "1",
+    //   title: "My First Publication",
+    //   description: "A brief description of my publication",
+    //   link: "https://example.com",
+    // },
+  ],
 };
 
 // Export all
@@ -234,4 +235,5 @@ export {
   competitiveSites,
   contactPageData,
   projectsHeader,
+  publications,
 };
