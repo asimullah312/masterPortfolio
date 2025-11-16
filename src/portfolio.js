@@ -96,6 +96,42 @@ const degrees = {
   ],
 };
 
+// Competitive Sites
+const competitiveSites = {
+  competitiveSites: [
+    {
+      siteName: "LeetCode",
+      iconifyClassname: "simple-icons:leetcode",
+      style: { color: "#F79F1B" },
+      profileLink: "",
+    },
+    {
+      siteName: "HackerRank",
+      iconifyClassname: "simple-icons:hackerrank",
+      style: { color: "#2EC866" },
+      profileLink: "",
+    },
+    {
+      siteName: "Codechef",
+      iconifyClassname: "simple-icons:codechef",
+      style: { color: "#5B4638" },
+      profileLink: "",
+    },
+    {
+      siteName: "Codeforces",
+      iconifyClassname: "simple-icons:codeforces",
+      style: { color: "#1F8ACB" },
+      profileLink: "",
+    },
+    {
+      siteName: "Kaggle",
+      iconifyClassname: "simple-icons:kaggle",
+      style: { color: "#20BEFF" },
+      profileLink: "",
+    },
+  ],
+};
+
 // Certifications
 const certifications = {
   certifications: [
@@ -156,6 +192,7 @@ const experience = {
   ],
 };
 
+// Export all
 export {
   settings,
   seo,
@@ -165,4 +202,5 @@ export {
   degrees,
   certifications,
   experience,
+  competitiveSites, // Added to fix import error
 };
