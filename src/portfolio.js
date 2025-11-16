@@ -2,7 +2,7 @@
 
 // Website settings
 const settings = {
-  isSplash: true,
+  isSplash: true, // set to false to disable splash screen
 };
 
 // SEO settings
@@ -192,17 +192,32 @@ const experience = {
   ],
 };
 
-// Contact Page (FIX: define this so export works)
+// Projects Page
+const projectsHeader = {
+  title: "Projects",
+  description:
+    "Here are some projects I've worked on involving DevOps, CI/CD, cloud, and automation.",
+};
+
+// Contact Page
 const contactPageData = {
   contactSection: {
     title: "Contact Me",
-    profile_image_path: "contactMail.png",
-    description: "You can reach me at asimullah312@gmail.com",
+    profile_image_path: "contact.png",
+    description:
+      "I am available for DevOps internships, projects, and collaborations. You can reach me via email or social media.",
   },
   blogSection: {
     title: "Blogs",
-    description: "Coming soon",
-    link: "",
+    subtitle: "I write articles on DevOps, cloud, and automation.",
+  },
+  addressSection: {
+    title: "Address",
+    subtitle: "Peshawar, Pakistan",
+  },
+  phoneSection: {
+    title: "Phone Number",
+    subtitle: "+92 300 0000000",
   },
 };
 
@@ -217,5 +232,6 @@ export {
   certifications,
   experience,
   competitiveSites,
-  contactPageData, // Now properly defined
+  contactPageData,
+  projectsHeader,
 };
