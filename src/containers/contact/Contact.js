@@ -2,15 +2,16 @@
 const contactPageData = {
   contactSection: {
     title: "Contact Me",
-    profile_image_path: "profile.png", // Add your profile picture here in src/assets/images
+    profile_image_path: "profile.png", // Replace with your actual profile image
     description:
-      "I am available on GitHub and LinkedIn. You can send me an email, I will reply within 24 hours. I can assist in DevOps, CI/CD, Cloud, Docker, Kubernetes, Terraform, Jenkins, and Linux.",
+      "I am available on almost every social media. You can message me, I will reply within 24 hours. I can help you with DevOps, CI/CD, Cloud, and automation.",
   },
   blogSection: {
     title: "Blogs",
-    subtitle: "I document my technical journey, tutorials, and project insights.",
-    link: "", // Add your blog link if you have one
-    avatar_image_path: "blogs_image.svg",
+    subtitle:
+      "I like to document my experiences in professional career journey as well as technical knowledge sharing.",
+    link: "",
+    avatar_image_path: "blogs_image.svg", // Optional
   },
   addressSection: {
     title: "Address",
@@ -21,7 +22,7 @@ const contactPageData = {
     postalCode: "",
     streetAddress: "",
     avatar_image_path: "address_image.svg",
-    location_map_link: "", // Optional Google Maps link
+    location_map_link: "", // Optional: Google Maps link
   },
   phoneSection: {
     title: "Email",
