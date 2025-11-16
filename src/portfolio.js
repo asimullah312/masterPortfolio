@@ -196,9 +196,8 @@ const experience = {
 const contactPageData = {
   contactSection: {
     title: "Contact Me",
-    profile_image_path: "profile.png",
-    description:
-      "Feel free to reach out to me via email or LinkedIn. I am open to internships and collaborations.",
+    profile_image_path: "contactMail.png",
+    description: "Feel free to reach out to me via email or social media.",
   },
 };
 
@@ -210,6 +209,12 @@ const projectsHeader = {
 };
 
 // Publications Page
+const publicationsHeader = {
+  title: "Publications",
+  description:
+    "Some of my publications, blogs, and articles about DevOps, cloud, and technology.",
+};
+
 const publications = {
   data: [
     // Example publication
@@ -235,5 +240,6 @@ export {
   competitiveSites,
   contactPageData,
   projectsHeader,
+  publicationsHeader,
   publications,
 };
