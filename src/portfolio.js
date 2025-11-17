@@ -1,5 +1,5 @@
 /* Portfolio.js fixed for your website */
-https://github.com/asimullah312/masterPortfolio/edit/master/src/portfolio.js
+
 // Website settings
 const settings = {
   isSplash: true,
@@ -150,11 +150,9 @@ const contactPageData = {
 
 // Projects
 const projectsHeader = {
-  projectsHeader: {
-    title: "Projects",
-    description:
-      "Here are some projects I have worked on related to DevOps, automation, and cloud technologies.",
-  },
+  title: "Projects",
+  description:
+    "Here are some projects I have worked on related to DevOps, automation, and cloud technologies.",
 };
 
 // Competitive Sites
@@ -216,12 +214,13 @@ const certifications = {
 };
 
 // Publications
+const publicationsHeader = {
+  title: "Publications",
+  description:
+    "Some of my publications, blogs, and articles about DevOps, cloud, and technology.",
+};
+
 const publications = {
-  publicationsHeader: {
-    title: "Publications",
-    description:
-      "Some of my publications, blogs, and articles about DevOps, cloud, and technology.",
-  },
   data: [],
 };
 
@@ -239,5 +238,6 @@ export {
   projectsHeader,
   competitiveSites,
   certifications,
+  publicationsHeader,
   publications,
 };
