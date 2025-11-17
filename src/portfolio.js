@@ -58,7 +58,7 @@ const socialMediaLinks = [
 ];
 
 // Skills
-const skillsSection = {
+const skills = skillsSection = {
   data: [
     {
       title: "DevOps & Cloud Engineering",
@@ -232,6 +232,7 @@ export {
   greeting,
   socialMediaLinks,
   skillsSection,
+  skills,
   degrees,
   experience,
   contactPageData,
