@@ -235,7 +235,7 @@ export {
   skillsSection,
   educationInfo,
   workExperiences,
-  contactInfo,
+  contactPageData,
   projects,
   competitiveSites,
   certifications,
