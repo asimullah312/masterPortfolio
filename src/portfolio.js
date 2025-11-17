@@ -42,16 +42,29 @@ export const seo = {
   author: "Asim Ullah"
 };
 
-// Social Media Links - FIXED: Proper structure with URL field
-export const socialMediaLinks = {
-  github: "https://github.com/asimullah312",
-  linkedin: "https://linkedin.com/in/asimullah312", 
-  gmail: "asimullah312@gmail.com",
-  gitlab: "https://gitlab.com/asimullah312",
-  facebook: "https://facebook.com/asimullah312",
-  twitter: "https://twitter.com/asimullah312",
-  instagram: "https://instagram.com/asimullah312"
-};
+// Social Media Links - FIXED: Must be ARRAY for .map() and .filter()
+export const socialMediaLinks = [
+  {
+    name: "Gmail",
+    url: "mailto:asimullah312@gmail.com",
+    className: "fa-envelope"
+  },
+  {
+    name: "LinkedIn", 
+    url: "https://linkedin.com/in/asimullah312",
+    className: "fa-linkedin"
+  },
+  {
+    name: "GitHub",
+    url: "https://github.com/asimullah312",
+    className: "fa-github"
+  },
+  {
+    name: "Twitter",
+    url: "https://twitter.com/asimullah312", 
+    className: "fa-twitter"
+  }
+];
 
 // Competitive Sites
 export const competitiveSites = {
@@ -75,7 +88,7 @@ export const competitiveSites = {
   ]
 };
 
-// Skills Section - FIXED: Complete structure
+// Skills Section - FIXED: Must have softwareSkills array
 export const skillsSection = {
   title: "What I do",
   subTitle: "DEVOPS ENGINEER & CLOUD ENTHUSIAST",
@@ -123,7 +136,7 @@ export const skillsSection = {
   ]
 };
 
-// Skills (alternative export)
+// Skills (alternative export) - FIXED: Must have softwareSkills array
 export const skills = {
   title: "What I do",
   subTitle: "DEVOPS ENGINEER & CLOUD ENTHUSIAST", 
@@ -368,39 +381,26 @@ export const achievementSection = {
   achievementsCards: []
 };
 
-// FIXED: All exports in correct order and structure
+// FIXED: All exports in correct order
 export default {
-  // Core sections
   splashScreen,
   settings,
   greeting,
   seo,
-  
-  // Social and competitive
-  socialMediaLinks,
+  socialMediaLinks, // This is now an ARRAY for .map() and .filter()
   competitiveSites,
-  
-  // Skills and education
   skills,
   skillsSection, 
   degrees,
   certifications,
-  
-  // Projects and publications
   projectsHeader,
   publicationsHeader,
   publications,
   openSource,
-  
-  // Experience and education
   experience,
   educationInfo,
-  
-  // Contact
   contactPageData,
   contactInfo,
-  
-  // Content sections
   projects,
   blogSection,
   podcastSection,
