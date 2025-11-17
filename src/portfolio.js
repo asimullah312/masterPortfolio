@@ -41,6 +41,44 @@ export const socialMediaLinks = {
   twitter: "https://twitter.com/asimullah312",
 };
 
+// Competitive Sites
+export const competitiveSites = {
+  competitiveSites: [
+    {
+      siteName: "GitHub",
+      iconifyClassname: "simple-icons:github",
+      style: {
+        color: "white"
+      },
+      profileLink: "https://github.com/asimullah312"
+    },
+    {
+      siteName: "HackerRank",
+      iconifyClassname: "simple-icons:hackerrank",
+      style: {
+        color: "#2EC866"
+      },
+      profileLink: "https://www.hackerrank.com/profile/asimullah312"
+    },
+    {
+      siteName: "LeetCode",
+      iconifyClassname: "simple-icons:leetcode",
+      style: {
+        color: "#FFA116"
+      },
+      profileLink: "https://leetcode.com/u/asimullah312/"
+    },
+    {
+      siteName: "DevOps",
+      iconifyClassname: "simple-icons:docker",
+      style: {
+        color: "#2496ED"
+      },
+      profileLink: "https://hub.docker.com/u/asimullah312"
+    }
+  ]
+};
+
 // Skills / Tech Stack
 export const skillsSection = {
   title: "What I do",
@@ -106,43 +144,43 @@ export const certifications = {
 
 // Open Source Projects Section
 export const openSource = {
+  githubConvertedToken: process.env.REACT_APP_GITHUB_TOKEN,
+  githubUserName: process.env.REACT_APP_GITHUB_USERNAME,
   title: "Open Source Projects",
+  subtitle: "My contributions to the open source community",
   viewAllLink: "https://github.com/asimullah312",
-  projects: [
-    {
-      title: "Kubernetes Deployment Automation",
-      description: "Automated Kubernetes deployment scripts with Helm charts",
-      link: "https://github.com/asimullah312/kubernetes-automation",
-    },
-    {
-      title: "Terraform AWS Infrastructure",
-      description: "Infrastructure as Code for AWS services using Terraform",
-      link: "https://github.com/asimullah312/terraform-aws",
-    },
-    {
-      title: "CI/CD Pipeline Templates",
-      description: "Jenkins and GitLab CI/CD pipeline templates for various applications",
-      link: "https://github.com/asimullah312/cicd-templates",
-    },
-  ],
 };
 
 // Experience Section
 export const experience = {
   title: "Experience",
+  subtitle: "WORK, INTERNSHIP AND VOLUNTEERING",
+  description: "I've worked with cutting-edge technologies and contributed to various DevOps projects.",
   experiences: [
     {
       role: "DevOps Engineer",
       company: "Tech Company",
-      duration: "2022 - Present",
-      description: "Building and maintaining CI/CD pipelines, container orchestration, and cloud infrastructure.",
+      companylogo: "/path/to/logo.png",
+      date: "Jan 2022 – Present",
+      desc: "Building and maintaining CI/CD pipelines, container orchestration, and cloud infrastructure.",
+      descBullets: [
+        "Implemented Kubernetes clusters serving 100+ microservices",
+        "Reduced deployment time by 70% through automation",
+        "Managed AWS and GCP cloud infrastructure"
+      ],
       skills: ["Docker", "Kubernetes", "AWS", "Jenkins", "Terraform"],
     },
     {
       role: "Cloud Engineer",
       company: "Previous Company",
-      duration: "2020 - 2022",
-      description: "Managed cloud infrastructure and implemented automation solutions.",
+      companylogo: "/path/to/logo.png",
+      date: "Jun 2020 – Dec 2022",
+      desc: "Managed cloud infrastructure and implemented automation solutions.",
+      descBullets: [
+        "Automated infrastructure provisioning using Terraform",
+        "Implemented monitoring solutions with Prometheus and Grafana",
+        "Reduced cloud costs by 30% through optimization"
+      ],
       skills: ["GCP", "Docker", "Python", "Bash", "GitLab CI"],
     },
   ],
@@ -151,12 +189,20 @@ export const experience = {
 // Education Section
 export const educationInfo = {
   title: "Education",
+  subtitle: "ACADEMIC CAREER",
   schools: [
     {
-      name: "University Name",
-      degree: "Bachelor of Computer Science",
-      duration: "2016 - 2020",
-      description: "Specialized in Cloud Computing and Distributed Systems",
+      schoolName: "University Name",
+      logo: "/path/to/university-logo.png",
+      subHeader: "Bachelor of Computer Science",
+      duration: "September 2016 - April 2020",
+      desc: "Specialized in Cloud Computing and Distributed Systems",
+      grade: "Grade A",
+      descBullets: [
+        "Graduated with First Class Honors",
+        "Specialized in Cloud Infrastructure and DevOps",
+        "Completed projects on container orchestration and microservices"
+      ],
     },
   ],
 };
@@ -164,44 +210,60 @@ export const educationInfo = {
 // Contact Section
 export const contactInfo = {
   title: "Contact Me",
-  profile_image_path: profile,
-  description:
-    "I'm always interested in new opportunities and collaborations. Feel free to reach out to me for any DevOps, cloud, or automation projects.",
-  mail: contactMail,
+  subtitle: "DISCUSS A PROJECT OR JUST WANT TO SAY HI? MY INBOX IS OPEN FOR ALL.",
+  number: "+92-300-1234567",
+  email_address: "asimullah312@gmail.com",
 };
 
 // Projects Section
 export const projects = {
   title: "Featured Projects",
+  subtitle: "MY CREATIONS AND CONTRIBUTIONS",
   projects: [
     {
       name: "Multi-Cloud Kubernetes Cluster",
-      description: "Deployed and managed Kubernetes clusters across AWS and GCP with automated scaling and monitoring",
-      githubLink: "https://github.com/asimullah312/multi-cloud-k8s",
-      demoLink: "",
+      desc: "Deployed and managed Kubernetes clusters across AWS and GCP with automated scaling and monitoring",
+      github: "https://github.com/asimullah312/multi-cloud-k8s",
+      link: "https://github.com/asimullah312/multi-cloud-k8s",
       technologies: ["Kubernetes", "AWS", "GCP", "Terraform", "Helm"],
     },
     {
       name: "Automated CI/CD Pipeline",
-      description: "End-to-end CI/CD pipeline with Jenkins, Docker, and Kubernetes including security scanning",
-      githubLink: "https://github.com/asimullah312/automated-cicd",
-      demoLink: "",
+      desc: "End-to-end CI/CD pipeline with Jenkins, Docker, and Kubernetes including security scanning",
+      github: "https://github.com/asimullah312/automated-cicd",
+      link: "https://github.com/asimullah312/automated-cicd",
       technologies: ["Jenkins", "Docker", "Kubernetes", "SonarQube", "Nexus"],
     },
     {
       name: "Infrastructure Monitoring Stack",
-      description: "Complete monitoring solution with Prometheus, Grafana, and Alertmanager for cloud infrastructure",
-      githubLink: "https://github.com/asimullah312/monitoring-stack",
-      demoLink: "",
+      desc: "Complete monitoring solution with Prometheus, Grafana, and Alertmanager for cloud infrastructure",
+      github: "https://github.com/asimullah312/monitoring-stack",
+      link: "https://github.com/asimullah312/monitoring-stack",
       technologies: ["Prometheus", "Grafana", "Docker", "AWS", "Terraform"],
     },
   ],
+};
+
+// Blog Section
+export const blogSection = {
+  title: "Blogs",
+  subtitle: "I occasionally write about DevOps, Cloud, and Automation",
+  link: "https://medium.com/@asimullah312",
+  avatar_image_path: "blogs_image.svg"
+};
+
+// Podcast Section
+export const podcastSection = {
+  title: "Podcast",
+  subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
+  podcast: []
 };
 
 export default {
   splashScreen,
   greeting,
   socialMediaLinks,
+  competitiveSites,
   skillsSection,
   certifications,
   openSource,
@@ -209,4 +271,6 @@ export default {
   educationInfo,
   contactInfo,
   projects,
+  blogSection,
+  podcastSection
 };
