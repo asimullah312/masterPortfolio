@@ -10,7 +10,12 @@ RUN npm install
 # add app
 COPY . ./
 
-EXPOSE 3001
+# Expose port
+EXPOSE 3000
+
+# Set environment variables for development
+ENV CHOKIDAR_USEPOLLING=true
+ENV WATCHPACK_POLLING=true
 
 # start app
 CMD ["npm", "start"]
