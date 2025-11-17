@@ -42,7 +42,7 @@ export const seo = {
   author: "Asim Ullah"
 };
 
-// Social Media Links - FIXED: Must be ARRAY for .map() and .filter()
+// Social Media Links - FIXED: Correct property names for components
 export const socialMediaLinks = [
   {
     name: "Gmail",
@@ -52,7 +52,7 @@ export const socialMediaLinks = [
   {
     name: "LinkedIn", 
     url: "https://linkedin.com/in/asimullah312",
-    className: "fa-linkedin"
+    className: "fa-linkedin-in"
   },
   {
     name: "GitHub",
@@ -63,6 +63,16 @@ export const socialMediaLinks = [
     name: "Twitter",
     url: "https://twitter.com/asimullah312", 
     className: "fa-twitter"
+  },
+  {
+    name: "Facebook",
+    url: "https://facebook.com/asimullah312",
+    className: "fa-facebook"
+  },
+  {
+    name: "Instagram",
+    url: "https://instagram.com/asimullah312", 
+    className: "fa-instagram"
   }
 ];
 
@@ -84,11 +94,19 @@ export const competitiveSites = {
         color: "#2EC866"
       },
       profileLink: "https://www.hackerrank.com/profile/asimullah312"
+    },
+    {
+      siteName: "LeetCode",
+      iconifyClassname: "simple-icons:leetcode",
+      style: {
+        color: "#FFA116"
+      },
+      profileLink: "https://leetcode.com/u/asimullah312"
     }
   ]
 };
 
-// Skills Section - FIXED: Must have softwareSkills array
+// Skills Section - FIXED: Complete structure with all required properties
 export const skillsSection = {
   title: "What I do",
   subTitle: "DEVOPS ENGINEER & CLOUD ENTHUSIAST",
@@ -132,11 +150,19 @@ export const skillsSection = {
     {
       skillName: "Python",
       fontAwesomeClassname: "fab fa-python"
+    },
+    {
+      skillName: "GitLab",
+      fontAwesomeClassname: "fab fa-gitlab"
+    },
+    {
+      skillName: "GitHub",
+      fontAwesomeClassname: "fab fa-github"
     }
   ]
 };
 
-// Skills (alternative export) - FIXED: Must have softwareSkills array
+// Skills - FIXED: Same structure as skillsSection
 export const skills = {
   title: "What I do",
   subTitle: "DEVOPS ENGINEER & CLOUD ENTHUSIAST", 
@@ -387,7 +413,7 @@ export default {
   settings,
   greeting,
   seo,
-  socialMediaLinks, // This is now an ARRAY for .map() and .filter()
+  socialMediaLinks,
   competitiveSites,
   skills,
   skillsSection, 
