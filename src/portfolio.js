@@ -1,6 +1,6 @@
 /* Change this file to get your personal Portfolio */
 
-import splashAnimation from "./assets/lottie/splashAnimation"; // keep your splash animation
+import splashAnimation from "./assets/lottie/splashAnimation";
 
 // Images
 import profile from "./assets/images/profile.png";
@@ -66,8 +66,46 @@ export const skillsSection = {
   ],
 };
 
+// Certifications Section
+export const certifications = {
+  certifications: [
+    {
+      title: "AWS Certified Solutions Architect",
+      subtitle: "Amazon Web Services",
+      logo_path: "aws-certified.png",
+      certificate_link: "https://www.credly.com/badges/example",
+      alt_name: "AWS",
+      color_code: "#FF9900"
+    },
+    {
+      title: "Certified Kubernetes Administrator (CKA)",
+      subtitle: "Cloud Native Computing Foundation",
+      logo_path: "kubernetes-certified.png",
+      certificate_link: "https://www.credly.com/badges/example",
+      alt_name: "Kubernetes",
+      color_code: "#326CE5"
+    },
+    {
+      title: "Terraform Associate",
+      subtitle: "HashiCorp",
+      logo_path: "terraform-certified.png",
+      certificate_link: "https://www.credly.com/badges/example",
+      alt_name: "Terraform",
+      color_code: "#7B42BC"
+    },
+    {
+      title: "Docker Certified Associate",
+      subtitle: "Docker",
+      logo_path: "docker-certified.png",
+      certificate_link: "https://www.credly.com/badges/example",
+      alt_name: "Docker",
+      color_code: "#2496ED"
+    }
+  ]
+};
+
 // Open Source Projects Section
-export const openSourceSection = {
+export const openSource = {
   title: "Open Source Projects",
   viewAllLink: "https://github.com/asimullah312",
   projects: [
@@ -90,7 +128,7 @@ export const openSourceSection = {
 };
 
 // Experience Section
-export const experienceSection = {
+export const experience = {
   title: "Experience",
   experiences: [
     {
@@ -111,7 +149,7 @@ export const experienceSection = {
 };
 
 // Education Section
-export const educationSection = {
+export const educationInfo = {
   title: "Education",
   schools: [
     {
@@ -124,7 +162,7 @@ export const educationSection = {
 };
 
 // Contact Section
-export const contactSection = {
+export const contactInfo = {
   title: "Contact Me",
   profile_image_path: profile,
   description:
@@ -133,7 +171,7 @@ export const contactSection = {
 };
 
 // Projects Section
-export const projectsSection = {
+export const projects = {
   title: "Featured Projects",
   projects: [
     {
@@ -165,9 +203,10 @@ export default {
   greeting,
   socialMediaLinks,
   skillsSection,
-  openSourceSection,
-  experienceSection,
-  educationSection,
-  contactSection,
-  projectsSection,
+  certifications,
+  openSource,
+  experience,
+  educationInfo,
+  contactInfo,
+  projects,
 };
