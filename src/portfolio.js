@@ -103,7 +103,7 @@ const degrees = {
 };
 
 // Work Experiences
-const workExperiences = {
+const experience = {
   title: "Experience",
   subtitle: "Internships",
   description:
@@ -234,7 +234,7 @@ export {
   socialMediaLinks,
   skillsSection,
   degrees,
-  workExperiences,
+  experience,
   contactPageData,
   projects,
   competitiveSites,
