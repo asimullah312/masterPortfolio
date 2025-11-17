@@ -104,6 +104,25 @@ export const skillsSection = {
   ],
 };
 
+// Degrees Section
+export const degrees = {
+  degrees: [
+    {
+      title: "Bachelor of Computer Science",
+      subtitle: "University Name",
+      logo_path: "university-logo.png",
+      alt_name: "University",
+      duration: "2016 - 2020",
+      descriptions: [
+        "⚡ I have studied basic software engineering subjects like DS, Algorithms, DBMS, OS, CA, AI etc.",
+        "⚡ Learned about cloud computing, distributed systems, and DevOps practices.",
+        "⚡ Completed various projects on containerization and orchestration technologies."
+      ],
+      website_link: "https://www.university.edu",
+    }
+  ],
+};
+
 // Certifications Section
 export const certifications = {
   certifications: [
@@ -303,6 +322,7 @@ export default {
   socialMediaLinks,
   competitiveSites,
   skillsSection,
+  degrees,
   certifications,
   openSource,
   experience,
