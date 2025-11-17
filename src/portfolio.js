@@ -168,6 +168,31 @@ export const projectsHeader = {
   avatar_image_path: "projects_image.svg"
 };
 
+// Publications Section
+export const publications = {
+  title: "Publications",
+  subtitle: "RESEARCH AND ACADEMIC PUBLICATIONS",
+  description: "I have contributed to various research papers and technical articles in the field of DevOps and Cloud Computing.",
+  publications: [
+    {
+      title: "Optimizing Kubernetes Cluster Performance in Multi-Cloud Environments",
+      conference: "International Conference on Cloud Computing",
+      journal: "Journal of Cloud Infrastructure",
+      description: "This paper explores strategies for optimizing Kubernetes cluster performance across multiple cloud providers.",
+      link: "https://example.com/publication1",
+      authors: "Asim Ullah, et al."
+    },
+    {
+      title: "Automated CI/CD Pipeline Security: Best Practices and Implementation",
+      conference: "DevOps World Conference",
+      journal: "IEEE Transactions on Software Engineering",
+      description: "A comprehensive study on implementing security measures in automated CI/CD pipelines.",
+      link: "https://example.com/publication2",
+      authors: "Asim Ullah"
+    }
+  ]
+};
+
 // Open Source Projects Section
 export const openSource = {
   githubConvertedToken: process.env.REACT_APP_GITHUB_TOKEN,
@@ -332,6 +357,7 @@ export default {
   degrees,
   certifications,
   projectsHeader,
+  publications,
   openSource,
   experience,
   educationInfo,
