@@ -6,14 +6,13 @@ import splashAnimation from "./assets/lottie/splashAnimation";
 import profile from "./assets/images/profile.png";
 import contactMail from "./assets/images/contactMail.png";
 
-// Tech & company logos
+// Tech & company logos - only include images that actually exist
 import docker from "./assets/images/docker.png";
 import kubernetes from "./assets/images/kubernetes.png";
 import terraform from "./assets/images/terraform.png";
 import aws from "./assets/images/aws.png";
 import gcpLogo from "./assets/images/gcp_logo.png";
 import jenkins from "./assets/images/jenkins.png";
-import gitlab from "./assets/images/gitlab.png";
 import python from "./assets/images/python.png";
 import linux from "./assets/images/linux.png";
 
@@ -137,7 +136,6 @@ export const skills = {
     { skillName: "AWS", fontAwesomeClassname: aws },
     { skillName: "GCP", fontAwesomeClassname: gcpLogo },
     { skillName: "Jenkins", fontAwesomeClassname: jenkins },
-    { skillName: "GitLab", fontAwesomeClassname: gitlab },
     { skillName: "Python", fontAwesomeClassname: python },
     { skillName: "Linux", fontAwesomeClassname: linux },
   ],
@@ -162,7 +160,6 @@ export const skillsSection = {
     { skillName: "AWS", fontAwesomeClassname: aws },
     { skillName: "GCP", fontAwesomeClassname: gcpLogo },
     { skillName: "Jenkins", fontAwesomeClassname: jenkins },
-    { skillName: "GitLab", fontAwesomeClassname: gitlab },
     { skillName: "Python", fontAwesomeClassname: python },
     { skillName: "Linux", fontAwesomeClassname: linux },
   ],
