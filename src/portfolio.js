@@ -1,246 +1,103 @@
-/* Portfolio.js - Fixed for your website */
+/* Change this file to get your personal Portfolio */
 
-// Website settings
-const settings = {
-  isSplash: true,
-};
+import emoji from "react-easy-emoji";
+import splashAnimation from "./assets/lottie/splashAnimation"; // keep your splash animation
 
-// SEO settings
-const seo = {
-  title: "Asim Ullah | Portfolio",
-  description:
-    "Computer Science graduate and DevOps Engineer focused on automation, CI/CD, cloud technologies, and modern DevOps tooling.",
-  og: {
-    title: "Asim Ullah | Portfolio",
-    type: "website",
-    url: "https://asimullah312.github.io/",
-  },
-};
+// Images
+import profile from "./assets/images/profile.png";
+import contactMail from "./assets/images/contactMail.png";
+import codeInLogo from "./assets/images/codeInLogo.png";
+import github from "./assets/images/git.png";
+import googleLogo from "./assets/images/google_logo.png";
+import linkedin from "./assets/images/linkedin.png";
+
+// Tech & company logos
+import docker from "./assets/images/docker.png";
+import kubernetes from "./assets/images/kubernetes.png";
+import terraform from "./assets/images/terraform.png";
+import aws from "./assets/images/aws.png";
+import gcpLogo from "./assets/images/gcp_logo.png";
+import jenkins from "./assets/images/jenkins.png";
+import intelLogo from "./assets/images/intel_logo.png";
+import ibmLogo from "./assets/images/ibm_logo.png";
+import microsoftLogo from "./assets/images/microsoft_logo.png";
+import tiktokLogo from "./assets/images/tiktok_logo.png";
+import stanfordLogo from "./assets/images/stanford_logo.png";
 
 // Splash Screen
-const splashScreen = {
-  enabled: settings.isSplash,
+export const splashScreen = {
+  enabled: true,
+  animation: splashAnimation,
   duration: 2000,
 };
 
-// Home Page
-const greeting = {
-  title: "Hi 👋 I'm Asim Ullah",
-  logo_name: "AsimUllah",
-  nickname: "DevOps Engineer",
-  subTitle:
-    "Computer Science graduate focused on DevOps, CI/CD, and cloud technologies.",
-  resumeLink: "",
-  portfolio_repository: "https://github.com/asimullah312",
-  githubProfile: "https://github.com/asimullah312",
+// Greeting
+export const greeting = {
+  username: "Asim Ullah",
+  title: "Hi all, I'm Asim",
+  subTitle: emoji(
+    "A passionate DevOps engineer 🚀 | Docker | CI/CD | Cloud Enthusiast"
+  ),
+  displayGreeting: true,
 };
 
 // Social Media Links
-const socialMediaLinks = [
-  {
-    name: "Github",
-    link: "https://github.com/asimullah312",
-    fontAwesomeIcon: "fa-github",
-    backgroundColor: "#181717",
-  },
-  {
-    name: "LinkedIn",
-    link: "https://www.linkedin.com/in/asim-ullah-43ab75270/",
-    fontAwesomeIcon: "fa-linkedin-in",
-    backgroundColor: "#0077B5",
-  },
-  {
-    name: "Gmail",
-    link: "mailto:asimullah312@gmail.com",
-    fontAwesomeIcon: "fa-google",
-    backgroundColor: "#D14836",
-  },
-];
+export const socialMediaLinks = {
+  github: "https://github.com/<your-github-username>",
+  linkedin: "https://linkedin.com/in/<your-linkedin>",
+  gmail: "your.email@example.com",
+};
 
-// Skills Section
-const skillsSection = {
-  data: [
-    {
-      title: "DevOps & Cloud Engineering",
-      fileName: "CloudInfraImg",
-      skills: [
-        "⚡ Building CI/CD pipelines using Jenkins & GitHub Actions",
-        "⚡ Containerization and orchestration with Docker & Kubernetes",
-        "⚡ Infrastructure automation using Terraform & Ansible",
-        "⚡ Deploying and managing applications on AWS",
-        "⚡ Working with Linux environments and production servers",
-      ],
-      softwareSkills: [
-        { skillName: "Docker", imageSrc: "docker.png" },
-        { skillName: "Kubernetes", imageSrc: "kubernetes.png" },
-        { skillName: "AWS", imageSrc: "aws.png" },
-        { skillName: "Linux", imageSrc: "linux.png" },
-        { skillName: "Ansible", imageSrc: "ansible.png" },
-        { skillName: "Terraform", imageSrc: "terraform.png" },
-        { skillName: "Jenkins", imageSrc: "jenkins.png" },
-        { skillName: "Git", imageSrc: "git.png" },
-      ],
-    },
+// Skills / Tech Stack
+export const skillsSection = {
+  title: "What I do",
+  skills: [
+    emoji("⚡ Develop CI/CD pipelines using Jenkins, GitLab CI/CD"),
+    emoji("⚡ Dockerize applications and deploy to Kubernetes"),
+    emoji("⚡ Cloud deployments with AWS & GCP"),
+    emoji("⚡ Automation and Infrastructure as Code using Terraform"),
+  ],
+  softwareSkills: [
+    { skillName: "Docker", fontAwesomeClassname: docker },
+    { skillName: "Kubernetes", fontAwesomeClassname: kubernetes },
+    { skillName: "Terraform", fontAwesomeClassname: terraform },
+    { skillName: "AWS", fontAwesomeClassname: aws },
+    { skillName: "GCP", fontAwesomeClassname: gcpLogo },
+    { skillName: "Jenkins", fontAwesomeClassname: jenkins },
   ],
 };
 
-// Alias for SkillSection.js
-const skills = skillsSection;
-
-// Education Info
-const degrees = {
-  degrees: [
-    {
-      title: "University of Engineering and Technology Peshawar",
-      subtitle: "B.Sc in Computer Science",
-      logo_path: "uett_logo.png",
-      alt_name: "UET Peshawar",
-      duration: "2020 – 2024",
-      descriptions: [
-        "⚡ Studied core computer science subjects including Operating Systems, Programming, Cloud Computing, and Software Engineering.",
-        "⚡ Focused on DevOps tools, modern software automation, and deployment pipelines.",
-      ],
-      website_link: "https://www.uetpeshawar.edu.pk/",
-    },
-  ],
-};
-
-// Work Experiences
-const experience = {
-  title: "Experience",
-  subtitle: "Internships",
+// Contact Section
+export const contactSection = {
+  title: "Contact Me",
+  profile_image_path: profile,
   description:
-    "Motivated DevOps Engineer with hands-on experience in CI/CD, Docker, Kubernetes, Terraform, Linux, AWS, and automation.",
-  sections: [
-    {
-      title: "Internships",
-      experiences: [
-        {
-          title: "DevOps Intern",
-          company: "Cortecsols",
-          company_url: "",
-          logo_path: "experience.svg",
-          duration: "2024",
-          location: "Remote",
-          description:
-            "Worked on deployment automation, CI/CD pipelines, and infrastructure provisioning using Terraform & Ansible.",
-          color: "#0879bf",
-        },
-        {
-          title: "DevOps Intern",
-          company: "Mi6",
-          company_url: "",
-          logo_path: "experience.svg",
-          duration: "2024",
-          location: "Remote",
-          description:
-            "Hands-on experience with Docker, Kubernetes, Jenkins, Git, Linux servers and cloud technologies.",
-          color: "#4285F4",
-        },
-      ],
-    },
-  ],
+    "I am available on almost every social media. You can message me, I will reply within 24 hours.",
+  mail: contactMail,
 };
 
-// Contact Info
-const contactPageData = {
-  contactSection: {
-    title: "Contact Me",
-    profile_image_path: "contactMail.png",
-    description: "Feel free to reach out to me via email or social media.",
-  },
-};
-
-// Projects
-const projectsHeader = {
+// Projects Section
+export const projectsSection = {
   title: "Projects",
-  description:
-    "Here are some projects I have worked on related to DevOps, automation, and cloud technologies.",
-};
-
-// Competitive Sites
-const competitiveSites = {
-  competitiveSites: [
+  projects: [
     {
-      siteName: "LeetCode",
-      iconifyClassname: "simple-icons:leetcode",
-      style: { color: "#F79F1B" },
-      profileLink: "",
+      name: "Project 1",
+      description: "Dockerized web app deployed on Kubernetes",
+      githubLink: "https://github.com/<your-github-username>/project1",
     },
     {
-      siteName: "HackerRank",
-      iconifyClassname: "simple-icons:hackerrank",
-      style: { color: "#2EC866" },
-      profileLink: "",
-    },
-    {
-      siteName: "Codechef",
-      iconifyClassname: "simple-icons:codechef",
-      style: { color: "#5B4638" },
-      profileLink: "",
-    },
-    {
-      siteName: "Codeforces",
-      iconifyClassname: "simple-icons:codeforces",
-      style: { color: "#1F8ACB" },
-      profileLink: "",
-    },
-    {
-      siteName: "Kaggle",
-      iconifyClassname: "simple-icons:kaggle",
-      style: { color: "#20BEFF" },
-      profileLink: "",
+      name: "Project 2",
+      description: "CI/CD pipeline setup with Jenkins and GitLab",
+      githubLink: "https://github.com/<your-github-username>/project2",
     },
   ],
 };
 
-// Certifications
-const certifications = {
-  certifications: [
-    {
-      title: "DevOps Training",
-      subtitle: "- TrainWithShubham",
-      logo_path: "devops.png",
-      certificate_link: "",
-      alt_name: "TrainWithShubham",
-      color_code: "#000000",
-    },
-    {
-      title: "DevOps Certification",
-      subtitle: "- Indian Institute (Online Course)",
-      logo_path: "devops.png",
-      certificate_link: "",
-      alt_name: "Online Course",
-      color_code: "#000000",
-    },
-  ],
-};
-
-// Publications
-const publicationsHeader = {
-  title: "Publications",
-  description:
-    "Some of my publications, blogs, and articles about DevOps, cloud, and technology.",
-};
-const publications = {
-  data: [],
-};
-
-// Export all
-export {
-  settings,
-  seo,
+export default {
   splashScreen,
   greeting,
   socialMediaLinks,
   skillsSection,
-  skills,
-  degrees,
-  experience,
-  contactPageData,
-  projectsHeader,
-  competitiveSites,
-  certifications,
-  publicationsHeader,
-  publications,
+  contactSection,
+  projectsSection,
 };
