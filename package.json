@@ -4,11 +4,11 @@
   "version": "0.1.0",
   "homepage": "https://asimullah312.github.io",
   "scripts": {
-    "build": "react-scripts build",
+    "start": "react-scripts --openssl-legacy-provider start",
+    "build": "react-scripts --openssl-legacy-provider build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -b gh-pages -d build",
     "eject": "react-scripts eject",
-    "start": "react-scripts start",
     "test": "react-scripts test",
     "fetch-github-data": "node git_data_fetcher.mjs"
   },
