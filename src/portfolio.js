@@ -140,7 +140,7 @@ const workExperiences = {
 };
 
 // Contact Info
-const contactInfo = {
+const contactPageData = {
   contactSection: {
     title: "Contact Me",
     profile_image_path: "contactMail.png",
