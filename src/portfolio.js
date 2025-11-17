@@ -1,8 +1,8 @@
-/* Change this file to get your personal Portfolio */
+/* Portfolio.js fixed for your website */
 
 // Website settings
 const settings = {
-  isSplash: true, // You selected yes
+  isSplash: true,
 };
 
 // SEO settings
@@ -15,6 +15,12 @@ const seo = {
     type: "website",
     url: "https://asimullah312.github.io/",
   },
+};
+
+// Splash Screen
+const splashScreen = {
+  enabled: settings.isSplash,
+  duration: 2000,
 };
 
 // Home Page
@@ -52,7 +58,7 @@ const socialMediaLinks = [
 ];
 
 // Skills
-const skills = {
+const skillsSection = {
   data: [
     {
       title: "DevOps & Cloud Engineering",
@@ -78,8 +84,8 @@ const skills = {
   ],
 };
 
-// Education Page
-const degrees = {
+// Education Info
+const educationInfo = {
   degrees: [
     {
       title: "University of Engineering and Technology Peshawar",
@@ -94,6 +100,61 @@ const degrees = {
       website_link: "https://www.uetpeshawar.edu.pk/",
     },
   ],
+};
+
+// Work Experiences
+const workExperiences = {
+  title: "Experience",
+  subtitle: "Internships",
+  description:
+    "Motivated DevOps Engineer with hands-on experience in CI/CD, Docker, Kubernetes, Terraform, Linux, AWS, and automation.",
+  sections: [
+    {
+      title: "Internships",
+      experiences: [
+        {
+          title: "DevOps Intern",
+          company: "Cortecsols",
+          company_url: "",
+          logo_path: "experience.svg",
+          duration: "2024",
+          location: "Remote",
+          description:
+            "Worked on deployment automation, CI/CD pipelines, and infrastructure provisioning using Terraform & Ansible.",
+          color: "#0879bf",
+        },
+        {
+          title: "DevOps Intern",
+          company: "Mi6",
+          company_url: "",
+          logo_path: "experience.svg",
+          duration: "2024",
+          location: "Remote",
+          description:
+            "Hands-on experience with Docker, Kubernetes, Jenkins, Git, Linux servers and cloud technologies.",
+          color: "#4285F4",
+        },
+      ],
+    },
+  ],
+};
+
+// Contact Info
+const contactInfo = {
+  contactSection: {
+    title: "Contact Me",
+    profile_image_path: "contactMail.png",
+    description: "Feel free to reach out to me via email or social media.",
+  },
+};
+
+// Projects
+const projects = {
+  projectsHeader: {
+    title: "Projects",
+    description:
+      "Here are some projects I have worked on related to DevOps, automation, and cloud technologies.",
+  },
 };
 
 // Competitive Sites
@@ -154,77 +215,14 @@ const certifications = {
   ],
 };
 
-// Experience Page
-const experience = {
-  title: "Experience",
-  subtitle: "Internships",
-  description:
-    "Motivated DevOps Engineer with hands-on experience in CI/CD, Docker, Kubernetes, Terraform, Linux, AWS, and automation.",
-  header_image_path: "experience.svg",
-  sections: [
-    {
-      title: "Internships",
-      experiences: [
-        {
-          title: "DevOps Intern",
-          company: "Cortecsols",
-          company_url: "",
-          logo_path: "experience.svg",
-          duration: "2024",
-          location: "Remote",
-          description:
-            "Worked on deployment automation, CI/CD pipelines, and infrastructure provisioning using Terraform & Ansible.",
-          color: "#0879bf",
-        },
-        {
-          title: "DevOps Intern",
-          company: "Mi6",
-          company_url: "",
-          logo_path: "experience.svg",
-          duration: "2024",
-          location: "Remote",
-          description:
-            "Hands-on experience with Docker, Kubernetes, Jenkins, Git, Linux servers and cloud technologies.",
-          color: "#4285F4",
-        },
-      ],
-    },
-  ],
-};
-
-// Contact Page
-const contactPageData = {
-  contactSection: {
-    title: "Contact Me",
-    profile_image_path: "contactMail.png",
-    description: "Feel free to reach out to me via email or social media.",
-  },
-};
-
-// Projects Page
-const projectsHeader = {
-  title: "Projects",
-  description:
-    "Here are some projects I have worked on related to DevOps, automation, and cloud technologies.",
-};
-
-// Publications Page
-const publicationsHeader = {
-  title: "Publications",
-  description:
-    "Some of my publications, blogs, and articles about DevOps, cloud, and technology.",
-};
-
+// Publications
 const publications = {
-  data: [
-    // Example publication
-    // {
-    //   id: "1",
-    //   title: "My First Publication",
-    //   description: "A brief description of my publication",
-    //   link: "https://example.com",
-    // },
-  ],
+  publicationsHeader: {
+    title: "Publications",
+    description:
+      "Some of my publications, blogs, and articles about DevOps, cloud, and technology.",
+  },
+  data: [],
 };
 
 // Export all
@@ -234,18 +232,12 @@ export {
   splashScreen,
   greeting,
   socialMediaLinks,
-  skills,
   skillsSection,
   educationInfo,
   workExperiences,
-  projects,
   contactInfo,
-  degrees,
-  certifications,
-  experience,
+  projects,
   competitiveSites,
-  contactPageData,
-  projectsHeader,
-  publicationsHeader,
+  certifications,
   publications,
 };
