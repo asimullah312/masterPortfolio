@@ -1,8 +1,9 @@
 /* Change this file to get your personal Portfolio */
 
-import splashAnimation from "./assets/lottie/splashAnimation";
+// Removed missing splashAnimation import
+// import splashAnimation from "./assets/lottie/splashAnimation";
 
-// Images
+// Images - only include images that actually exist
 import profile from "./assets/images/profile.png";
 import contactMail from "./assets/images/contactMail.png";
 
@@ -13,19 +14,18 @@ import terraform from "./assets/images/terraform.png";
 import aws from "./assets/images/aws.png";
 import gcpLogo from "./assets/images/gcp_logo.png";
 import jenkins from "./assets/images/jenkins.png";
-import python from "./assets/images/python.png";
 import linux from "./assets/images/linux.png";
 
-// Splash Screen
+// Splash Screen - disabled since animation file is missing
 export const splashScreen = {
-  enabled: true,
-  animation: splashAnimation,
+  enabled: false, // Changed to false since file is missing
+  animation: null, // Removed missing animation
   duration: 2000,
 };
 
 // Settings
 export const settings = {
-  isSplash: true,
+  isSplash: false, // Disabled splash screen
   useCustomName: false,
   themeColor: "#000000",
 };
@@ -136,7 +136,6 @@ export const skills = {
     { skillName: "AWS", fontAwesomeClassname: aws },
     { skillName: "GCP", fontAwesomeClassname: gcpLogo },
     { skillName: "Jenkins", fontAwesomeClassname: jenkins },
-    { skillName: "Python", fontAwesomeClassname: python },
     { skillName: "Linux", fontAwesomeClassname: linux },
   ],
 };
@@ -160,7 +159,6 @@ export const skillsSection = {
     { skillName: "AWS", fontAwesomeClassname: aws },
     { skillName: "GCP", fontAwesomeClassname: gcpLogo },
     { skillName: "Jenkins", fontAwesomeClassname: jenkins },
-    { skillName: "Python", fontAwesomeClassname: python },
     { skillName: "Linux", fontAwesomeClassname: linux },
   ],
 };
