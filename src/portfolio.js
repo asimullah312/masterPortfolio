@@ -168,6 +168,13 @@ export const projectsHeader = {
   avatar_image_path: "projects_image.svg"
 };
 
+// Publications Header
+export const publicationsHeader = {
+  title: "Publications",
+  description: "I have contributed to various research papers and technical articles in the field of DevOps and Cloud Computing. My publications focus on container orchestration, cloud infrastructure optimization, and DevOps best practices.",
+  avatar_image_path: "publications_image.svg"
+};
+
 // Publications Section
 export const publications = {
   title: "Publications",
@@ -357,6 +364,7 @@ export default {
   degrees,
   certifications,
   projectsHeader,
+  publicationsHeader,
   publications,
   openSource,
   experience,
