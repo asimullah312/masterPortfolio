@@ -8,12 +8,12 @@ import { GlobalStyles } from "./global";
 function App() {
   return (
     <ThemeProvider theme={chosenTheme}>
-      <>
+      <React.StrictMode>
         <GlobalStyles />
         <div>
           <Main theme={chosenTheme} />
         </div>
-      </>
+      </React.StrictMode>
     </ThemeProvider>
   );
 }
