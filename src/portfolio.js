@@ -161,6 +161,13 @@ export const certifications = {
   ]
 };
 
+// Projects Header
+export const projectsHeader = {
+  title: "Projects",
+  description: "My projects make use of a vast variety of latest technology tools. My best experience is creating DevOps projects and deploying them to cloud infrastructure using modern CI/CD practices.",
+  avatar_image_path: "projects_image.svg"
+};
+
 // Open Source Projects Section
 export const openSource = {
   githubConvertedToken: process.env.REACT_APP_GITHUB_TOKEN,
@@ -324,6 +331,7 @@ export default {
   skillsSection,
   degrees,
   certifications,
+  projectsHeader,
   openSource,
   experience,
   educationInfo,
