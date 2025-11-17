@@ -1,31 +1,15 @@
 /* Change this file to get your personal Portfolio */
 
-// Removed missing splashAnimation import
-// import splashAnimation from "./assets/lottie/splashAnimation";
-
-// Images - only include images that actually exist
-import profile from "./assets/images/profile.png";
-import contactMail from "./assets/images/contactMail.png";
-
-// Tech & company logos - only include images that actually exist
-import docker from "./assets/images/docker.png";
-import kubernetes from "./assets/images/kubernetes.png";
-import terraform from "./assets/images/terraform.png";
-import aws from "./assets/images/aws.png";
-import gcpLogo from "./assets/images/gcp_logo.png";
-import jenkins from "./assets/images/jenkins.png";
-import linux from "./assets/images/linux.png";
-
 // Splash Screen - disabled since animation file is missing
 export const splashScreen = {
-  enabled: false, // Changed to false since file is missing
-  animation: null, // Removed missing animation
+  enabled: false,
+  animation: null,
   duration: 2000,
 };
 
 // Settings
 export const settings = {
-  isSplash: false, // Disabled splash screen
+  isSplash: false,
   useCustomName: false,
   themeColor: "#000000",
 };
@@ -71,13 +55,33 @@ export const seo = {
   }
 };
 
-// Social Media Links
-export const socialMediaLinks = {
-  github: "https://github.com/asimullah312",
-  linkedin: "https://linkedin.com/in/asimullah312",
-  gmail: "asimullah312@gmail.com",
-  twitter: "https://twitter.com/asimullah312",
-};
+// Social Media Links - FIXED: Now as array for .map() and .filter()
+export const socialMediaLinks = [
+  {
+    name: "GitHub",
+    url: "https://github.com/asimullah312",
+    className: "github",
+    icon: "fab fa-github"
+  },
+  {
+    name: "LinkedIn",
+    url: "https://linkedin.com/in/asimullah312",
+    className: "linkedin",
+    icon: "fab fa-linkedin-in"
+  },
+  {
+    name: "Gmail",
+    url: "mailto:asimullah312@gmail.com",
+    className: "google",
+    icon: "fab fa-google"
+  },
+  {
+    name: "Twitter",
+    url: "https://twitter.com/asimullah312",
+    className: "twitter",
+    icon: "fab fa-twitter"
+  }
+];
 
 // Competitive Sites
 export const competitiveSites = {
@@ -105,19 +109,11 @@ export const competitiveSites = {
         color: "#FFA116"
       },
       profileLink: "https://leetcode.com/u/asimullah312/"
-    },
-    {
-      siteName: "DevOps",
-      iconifyClassname: "simple-icons:docker",
-      style: {
-        color: "#2496ED"
-      },
-      profileLink: "https://hub.docker.com/u/asimullah312"
     }
   ]
 };
 
-// Skills Section
+// Skills Section - FIXED: Added softwareSkills data
 export const skills = {
   title: "What I do",
   subTitle: "DEVOPS ENGINEER & CLOUD ENTHUSIAST",
@@ -130,14 +126,71 @@ export const skills = {
     "⚡ Scripting and automation with Python, Bash, and Groovy",
   ],
   softwareSkills: [
-    { skillName: "Docker", fontAwesomeClassname: docker },
-    { skillName: "Kubernetes", fontAwesomeClassname: kubernetes },
-    { skillName: "Terraform", fontAwesomeClassname: terraform },
-    { skillName: "AWS", fontAwesomeClassname: aws },
-    { skillName: "GCP", fontAwesomeClassname: gcpLogo },
-    { skillName: "Jenkins", fontAwesomeClassname: jenkins },
-    { skillName: "Linux", fontAwesomeClassname: linux },
-  ],
+    {
+      skillName: "Docker",
+      fontAwesomeClassname: "fab fa-docker",
+      style: {
+        backgroundColor: "transparent",
+        color: "#2496ED"
+      }
+    },
+    {
+      skillName: "Kubernetes",
+      fontAwesomeClassname: "fas fa-cubes",
+      style: {
+        backgroundColor: "transparent",
+        color: "#326CE5"
+      }
+    },
+    {
+      skillName: "Terraform",
+      fontAwesomeClassname: "fas fa-code",
+      style: {
+        backgroundColor: "transparent",
+        color: "#7B42BC"
+      }
+    },
+    {
+      skillName: "AWS",
+      fontAwesomeClassname: "fab fa-aws",
+      style: {
+        backgroundColor: "transparent",
+        color: "#FF9900"
+      }
+    },
+    {
+      skillName: "GCP",
+      fontAwesomeClassname: "fas fa-cloud",
+      style: {
+        backgroundColor: "transparent",
+        color: "#4285F4"
+      }
+    },
+    {
+      skillName: "Jenkins",
+      fontAwesomeClassname: "fab fa-jenkins",
+      style: {
+        backgroundColor: "transparent",
+        color: "#D24939"
+      }
+    },
+    {
+      skillName: "Linux",
+      fontAwesomeClassname: "fab fa-linux",
+      style: {
+        backgroundColor: "transparent",
+        color: "#000000"
+      }
+    },
+    {
+      skillName: "Python",
+      fontAwesomeClassname: "fab fa-python",
+      style: {
+        backgroundColor: "transparent",
+        color: "#3776AB"
+      }
+    }
+  ]
 };
 
 // Skills Section (alternative name for compatibility)
@@ -153,14 +206,35 @@ export const skillsSection = {
     "⚡ Scripting and automation with Python, Bash, and Groovy",
   ],
   softwareSkills: [
-    { skillName: "Docker", fontAwesomeClassname: docker },
-    { skillName: "Kubernetes", fontAwesomeClassname: kubernetes },
-    { skillName: "Terraform", fontAwesomeClassname: terraform },
-    { skillName: "AWS", fontAwesomeClassname: aws },
-    { skillName: "GCP", fontAwesomeClassname: gcpLogo },
-    { skillName: "Jenkins", fontAwesomeClassname: jenkins },
-    { skillName: "Linux", fontAwesomeClassname: linux },
-  ],
+    {
+      skillName: "Docker",
+      fontAwesomeClassname: "fab fa-docker"
+    },
+    {
+      skillName: "Kubernetes",
+      fontAwesomeClassname: "fas fa-cubes"
+    },
+    {
+      skillName: "Terraform",
+      fontAwesomeClassname: "fas fa-code"
+    },
+    {
+      skillName: "AWS",
+      fontAwesomeClassname: "fab fa-aws"
+    },
+    {
+      skillName: "GCP",
+      fontAwesomeClassname: "fas fa-cloud"
+    },
+    {
+      skillName: "Jenkins",
+      fontAwesomeClassname: "fab fa-jenkins"
+    },
+    {
+      skillName: "Linux",
+      fontAwesomeClassname: "fab fa-linux"
+    }
+  ]
 };
 
 // Degrees Section
@@ -208,14 +282,6 @@ export const certifications = {
       certificate_link: "https://www.credly.com/badges/example",
       alt_name: "Terraform",
       color_code: "#7B42BC"
-    },
-    {
-      title: "Docker Certified Associate",
-      subtitle: "Docker",
-      logo_path: "docker-certified.png",
-      certificate_link: "https://www.credly.com/badges/example",
-      alt_name: "Docker",
-      color_code: "#2496ED"
     }
   ]
 };
@@ -247,14 +313,6 @@ export const publications = {
       description: "This paper explores strategies for optimizing Kubernetes cluster performance across multiple cloud providers.",
       link: "https://example.com/publication1",
       authors: "Asim Ullah, et al."
-    },
-    {
-      title: "Automated CI/CD Pipeline Security: Best Practices and Implementation",
-      conference: "DevOps World Conference",
-      journal: "IEEE Transactions on Software Engineering",
-      description: "A comprehensive study on implementing security measures in automated CI/CD pipelines.",
-      link: "https://example.com/publication2",
-      authors: "Asim Ullah"
     }
   ]
 };
@@ -284,8 +342,7 @@ export const experience = {
         "Implemented Kubernetes clusters serving 100+ microservices",
         "Reduced deployment time by 70% through automation",
         "Managed AWS and GCP cloud infrastructure"
-      ],
-      skills: ["Docker", "Kubernetes", "AWS", "Jenkins", "Terraform"],
+      ]
     },
     {
       role: "Cloud Engineer",
@@ -297,10 +354,9 @@ export const experience = {
         "Automated infrastructure provisioning using Terraform",
         "Implemented monitoring solutions with Prometheus and Grafana",
         "Reduced cloud costs by 30% through optimization"
-      ],
-      skills: ["GCP", "Docker", "Python", "Bash", "GitLab CI"],
-    },
-  ],
+      ]
+    }
+  ]
 };
 
 // Education Section
@@ -320,8 +376,8 @@ export const educationInfo = {
         "Specialized in Cloud Infrastructure and DevOps",
         "Completed projects on container orchestration and microservices"
       ],
-    },
-  ],
+    }
+  ]
 };
 
 // Contact Page Data
@@ -374,15 +430,8 @@ export const projects = {
       github: "https://github.com/asimullah312/automated-cicd",
       link: "https://github.com/asimullah312/automated-cicd",
       technologies: ["Jenkins", "Docker", "Kubernetes", "SonarQube", "Nexus"],
-    },
-    {
-      name: "Infrastructure Monitoring Stack",
-      desc: "Complete monitoring solution with Prometheus, Grafana, and Alertmanager for cloud infrastructure",
-      github: "https://github.com/asimullah312/monitoring-stack",
-      link: "https://github.com/asimullah312/monitoring-stack",
-      technologies: ["Prometheus", "Grafana", "Docker", "AWS", "Terraform"],
-    },
-  ],
+    }
+  ]
 };
 
 // Blog Section
