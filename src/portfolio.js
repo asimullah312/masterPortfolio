@@ -7,11 +7,11 @@ const settings = {
 
 // SEO settings
 const seo = {
-  title: "Asim Ullah Portfolio",
+  title: "Asim Ullah | Portfolio",
   description:
     "Computer Science graduate and DevOps Engineer focused on automation, CI/CD, cloud technologies, and modern DevOps tooling.",
   og: {
-    title: "Asim Ullah Portfolio",
+    title: "Asim Ullah | Portfolio",
     type: "website",
     url: "https://asimullah312.github.io/",
   },
@@ -19,7 +19,7 @@ const seo = {
 
 // Home Page
 const greeting = {
-  title: "Asim Ullah",
+  title: "Hi 👋 I'm Asim Ullah",
   logo_name: "AsimUllah",
   nickname: "DevOps Engineer",
   subTitle:
@@ -231,9 +231,15 @@ const publications = {
 export {
   settings,
   seo,
+  splashScreen,
   greeting,
   socialMediaLinks,
   skills,
+  skillsSection,
+  educationInfo,
+  workExperiences,
+  projects,
+  contactInfo,
   degrees,
   certifications,
   experience,
