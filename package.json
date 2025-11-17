@@ -24,6 +24,7 @@
     "react-reveal": "^1.2.2",
     "react-router-dom": "^6.20.0",
     "react-scripts": "5.0.1",
+    "react-easy-emoji": "^0.5.0",
     "styled-components": "^6.1.0",
     "styletron-engine-atomic": "^1.4.8",
     "styletron-react": "^6.1.0"
@@ -55,7 +56,7 @@
     }
   },
   "lint-staged": {
-    "*.json": "prettier-package-json --write",
+    "*.json": "prettier --write",
     "*.{js,jsx,css,md}": "prettier --write"
   }
 }
