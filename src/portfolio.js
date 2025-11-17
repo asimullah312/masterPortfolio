@@ -23,7 +23,7 @@ export const greeting = {
   displayGreeting: true,
 };
 
-// SEO Section
+// SEO Section - FIXED: Added all required properties
 export const seo = {
   title: "Asim Ullah | DevOps Engineer",
   description: "A passionate DevOps Engineer specializing in Docker, Kubernetes, CI/CD, AWS, GCP, and Cloud Infrastructure.",
@@ -39,44 +39,37 @@ export const seo = {
     "GCP",
     "Terraform"
   ],
-  author: "Asim Ullah"
+  author: "Asim Ullah",
+  twitter: "@asimullah312", // Added missing property
+  facebook: "", // Added missing property
 };
 
-// Social Media Links - FIXED: Correct property names for components
-export const socialMediaLinks = [
-  {
-    name: "Gmail",
-    url: "mailto:asimullah312@gmail.com",
-    className: "fa-envelope"
-  },
-  {
-    name: "LinkedIn", 
-    url: "https://linkedin.com/in/asimullah312",
-    className: "fa-linkedin-in"
-  },
-  {
-    name: "GitHub",
-    url: "https://github.com/asimullah312",
-    className: "fa-github"
-  },
-  {
-    name: "Twitter",
-    url: "https://twitter.com/asimullah312", 
-    className: "fa-twitter"
-  },
-  {
-    name: "Facebook",
-    url: "https://facebook.com/asimullah312",
-    className: "fa-facebook"
-  },
-  {
-    name: "Instagram",
-    url: "https://instagram.com/asimullah312", 
-    className: "fa-instagram"
-  }
-];
+// Social Media Links - FIXED: Added all required properties
+export const socialMediaLinks = {
+  github: "https://github.com/asimullah312",
+  linkedin: "https://linkedin.com/in/asimullah312",
+  gmail: "asimullah312@gmail.com",
+  gitlab: "",
+  facebook: "https://facebook.com/asimullah312",
+  medium: "",
+  stackoverflow: "",
+  Instagram: "https://instagram.com/asimullah312",
+  twitter: "https://twitter.com/asimullah312",
+  behance: "",
+  dribbble: "",
+  youtube: "",
+  blogger: "",
+  hackerrank: "https://www.hackerrank.com/profile/asimullah312",
+  leetcode: "https://leetcode.com/u/asimullah312",
+  topcoder: "",
+  codechef: "",
+  codeforces: "",
+  geeks_for_geeks: "",
+  discord: "",
+  rssurl: "",
+};
 
-// Competitive Sites
+// Competitive Sites - FIXED: Correct structure
 export const competitiveSites = {
   competitiveSites: [
     {
@@ -106,111 +99,102 @@ export const competitiveSites = {
   ]
 };
 
-// Skills Section - FIXED: Complete structure with all required properties
+// Skills Section - FIXED: Complete structure
 export const skillsSection = {
   title: "What I do",
   subTitle: "DEVOPS ENGINEER & CLOUD ENTHUSIAST",
-  skills: [
-    "⚡ Develop and maintain CI/CD pipelines using Jenkins, GitLab CI/CD",
-    "⚡ Containerize applications using Docker and deploy to Kubernetes",
-    "⚡ Cloud infrastructure management on AWS & GCP",
-    "⚡ Infrastructure as Code using Terraform and CloudFormation",
-    "⚡ Monitoring and logging with Prometheus, Grafana, and ELK Stack",
-    "⚡ Scripting and automation with Python, Bash, and Groovy",
-  ],
-  softwareSkills: [
+  data: [
     {
-      skillName: "Docker",
-      fontAwesomeClassname: "fab fa-docker"
-    },
-    {
-      skillName: "Kubernetes", 
-      fontAwesomeClassname: "fas fa-cubes"
-    },
-    {
-      skillName: "Terraform",
-      fontAwesomeClassname: "fas fa-code"
-    },
-    {
-      skillName: "AWS",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    {
-      skillName: "GCP",
-      fontAwesomeClassname: "fas fa-cloud"
-    },
-    {
-      skillName: "Jenkins",
-      fontAwesomeClassname: "fab fa-jenkins"
-    },
-    {
-      skillName: "Linux",
-      fontAwesomeClassname: "fab fa-linux"
-    },
-    {
-      skillName: "Python",
-      fontAwesomeClassname: "fab fa-python"
-    },
-    {
-      skillName: "GitLab",
-      fontAwesomeClassname: "fab fa-gitlab"
-    },
-    {
-      skillName: "GitHub",
-      fontAwesomeClassname: "fab fa-github"
+      title: "DevOps & Cloud Infrastructure",
+      lottieAnimationFile: "/lottie/build.json", // You'll need to add this file
+      skills: [
+        "⚡ Develop and maintain CI/CD pipelines using Jenkins, GitLab CI/CD",
+        "⚡ Containerize applications using Docker and deploy to Kubernetes",
+        "⚡ Cloud infrastructure management on AWS & GCP",
+        "⚡ Infrastructure as Code using Terraform and CloudFormation",
+      ],
+      softwareSkills: [
+        {
+          skillName: "Docker",
+          fontAwesomeClassname: "fab fa-docker",
+          style: {
+            color: "#2496ED"
+          }
+        },
+        {
+          skillName: "Kubernetes", 
+          fontAwesomeClassname: "fas fa-cubes",
+          style: {
+            color: "#326CE5"
+          }
+        },
+        {
+          skillName: "Terraform",
+          fontAwesomeClassname: "fas fa-code",
+          style: {
+            color: "#7B42BC"
+          }
+        },
+        {
+          skillName: "AWS",
+          fontAwesomeClassname: "fab fa-aws",
+          style: {
+            color: "#FF9900"
+          }
+        },
+        {
+          skillName: "GCP",
+          fontAwesomeClassname: "fas fa-cloud",
+          style: {
+            color: "#4285F4"
+          }
+        },
+        {
+          skillName: "Jenkins",
+          fontAwesomeClassname: "fab fa-jenkins",
+          style: {
+            color: "#D24939"
+          }
+        },
+      ]
     }
   ]
 };
 
-// Skills - FIXED: Same structure as skillsSection
+// Skills - FIXED: Added viewSkillBars property
 export const skills = {
-  title: "What I do",
+  title: "Skills",
   subTitle: "DEVOPS ENGINEER & CLOUD ENTHUSIAST", 
-  skills: [
-    "⚡ Develop and maintain CI/CD pipelines using Jenkins, GitLab CI/CD",
-    "⚡ Containerize applications using Docker and deploy to Kubernetes",
-    "⚡ Cloud infrastructure management on AWS & GCP",
-    "⚡ Infrastructure as Code using Terraform and CloudFormation",
-    "⚡ Monitoring and logging with Prometheus, Grafana, and ELK Stack",
-    "⚡ Scripting and automation with Python, Bash, and Groovy",
-  ],
-  softwareSkills: [
+  viewSkillBars: true, // Added this required property
+  experience: [
     {
-      skillName: "Docker",
-      fontAwesomeClassname: "fab fa-docker"
+      Stack: "Containerization",
+      progressPercentage: "90"
     },
     {
-      skillName: "Kubernetes",
-      fontAwesomeClassname: "fas fa-cubes" 
+      Stack: "Kubernetes",
+      progressPercentage: "85"
     },
     {
-      skillName: "Terraform",
-      fontAwesomeClassname: "fas fa-code"
+      Stack: "AWS/GCP",
+      progressPercentage: "80"
     },
     {
-      skillName: "AWS",
-      fontAwesomeClassname: "fab fa-aws"
+      Stack: "CI/CD",
+      progressPercentage: "85"
     },
     {
-      skillName: "GCP",
-      fontAwesomeClassname: "fas fa-cloud"
+      Stack: "Terraform",
+      progressPercentage: "75"
     },
     {
-      skillName: "Jenkins",
-      fontAwesomeClassname: "fab fa-jenkins"
-    },
-    {
-      skillName: "Linux",
-      fontAwesomeClassname: "fab fa-linux"
-    },
-    {
-      skillName: "Python",
-      fontAwesomeClassname: "fab fa-python"
+      Stack: "Linux/Shell Scripting",
+      progressPercentage: "80"
     }
   ]
 };
 
-// Degrees Section
+// Degrees Section - FIXED: Added required structure
 export const degrees = {
   degrees: [
     {
@@ -229,7 +213,7 @@ export const degrees = {
   ]
 };
 
-// Certifications Section
+// Certifications Section - FIXED: Complete structure
 export const certifications = {
   certifications: [
     {
@@ -251,6 +235,41 @@ export const certifications = {
   ]
 };
 
+// Experience Section - FIXED: Complete structure
+export const experience = {
+  title: "Experience",
+  subtitle: "WORK AND INTERNSHIP",
+  description: "I've worked with cutting-edge DevOps technologies.",
+  header_image_path: "experience.svg",
+  sections: [
+    {
+      title: "Work",
+      experiences: [
+        {
+          title: "DevOps Engineer",
+          company: "Tech Company",
+          company_url: "https://company.com",
+          logo_path: "company-logo.png",
+          duration: "Jan 2022 – Present",
+          location: "Islamabad, Pakistan",
+          description: "Building and maintaining CI/CD pipelines and cloud infrastructure.",
+          color: "#0879bf",
+        },
+        {
+          title: "Cloud Engineer Intern",
+          company: "Startup Inc.",
+          company_url: "https://startup.com",
+          logo_path: "startup-logo.png",
+          duration: "Jun 2021 – Dec 2021",
+          location: "Remote",
+          description: "Assisted in cloud infrastructure deployment and automation.",
+          color: "#0879bf",
+        }
+      ]
+    }
+  ]
+};
+
 // Projects Header
 export const projectsHeader = {
   title: "Projects",
@@ -258,65 +277,99 @@ export const projectsHeader = {
   avatar_image_path: "projects_image.svg"
 };
 
-// Publications Header
-export const publicationsHeader = {
-  title: "Publications", 
-  description: "I have contributed to research papers and technical articles in DevOps and Cloud Computing.",
-  avatar_image_path: "publications_image.svg"
-};
-
-// Publications Section
-export const publications = {
-  title: "Publications",
-  subtitle: "RESEARCH AND ACADEMIC PUBLICATIONS",
-  description: "I have contributed to various research papers in DevOps and Cloud Computing.",
-  publications: [
+// Projects Section - FIXED: Complete structure
+export const projects = {
+  data: [
     {
-      title: "Optimizing Kubernetes Cluster Performance",
-      conference: "International Conference on Cloud Computing",
-      journal: "Journal of Cloud Infrastructure", 
-      description: "Strategies for optimizing Kubernetes across multiple cloud providers.",
-      link: "https://example.com/publication1",
-      authors: "Asim Ullah"
-    }
-  ]
-};
-
-// Open Source Projects Section
-export const openSource = {
-  githubConvertedToken: "your_token_here",
-  githubUserName: "asimullah312",
-  title: "Open Source Projects", 
-  subtitle: "My contributions to open source",
-  viewAllLink: "https://github.com/asimullah312"
-};
-
-// Experience Section
-export const experience = {
-  title: "Experience",
-  subtitle: "WORK AND INTERNSHIP",
-  description: "I've worked with cutting-edge DevOps technologies.",
-  experiences: [
+      id: "1",
+      name: "Multi-Cloud Kubernetes Cluster",
+      url: "https://github.com/asimullah312/multi-cloud-k8s",
+      description: "Deployed Kubernetes clusters across AWS and GCP with automated provisioning",
+      languages: [
+        {
+          name: "Terraform",
+          iconifyClass: "vscode-icons:file-type-terraform"
+        },
+        {
+          name: "Kubernetes",
+          iconifyClass: "logos:kubernetes"
+        },
+        {
+          name: "AWS",
+          iconifyClass: "logos:aws"
+        },
+        {
+          name: "GCP", 
+          iconifyClass: "logos:google-cloud"
+        }
+      ]
+    },
     {
-      role: "DevOps Engineer",
-      company: "Tech Company",
-      companylogo: "/path/to/logo.png",
-      date: "Jan 2022 – Present",
-      desc: "Building and maintaining CI/CD pipelines and cloud infrastructure.",
-      descBullets: [
-        "Implemented Kubernetes clusters",
-        "Reduced deployment time by 70%",
-        "Managed AWS and GCP infrastructure"
+      id: "2",
+      name: "Automated CI/CD Pipeline", 
+      url: "https://github.com/asimullah312/automated-cicd",
+      description: "End-to-end CI/CD pipeline with Jenkins and Kubernetes for microservices",
+      languages: [
+        {
+          name: "Jenkins",
+          iconifyClass: "logos:jenkins"
+        },
+        {
+          name: "Docker",
+          iconifyClass: "logos:docker-icon"
+        },
+        {
+          name: "Kubernetes",
+          iconifyClass: "logos:kubernetes"
+        },
+        {
+          name: "Groovy",
+          iconifyClass: "vscode-icons:file-type-groovy"
+        }
       ]
     }
   ]
 };
 
-// Education Section
+// Contact Info - FIXED: Complete structure
+export const contactInfo = {
+  title: "Contact Me",
+  subtitle: "DISCUSS A PROJECT OR JUST WANT TO SAY HI?",
+  number: "+92-300-1234567",
+  email_address: "asimullah312@gmail.com",
+  email: "asimullah312@gmail.com", // Added this
+  address: "Islamabad, Pakistan", // Added this
+  twitter: "asimullah312", // Added this
+  github: "asimullah312", // Added this
+};
+
+// Contact Page Data
+export const contactPageData = {
+  contactSection: {
+    title: "Contact Me",
+    profile_image_path: "contact.jpg",
+    description: "I'm always interested in new opportunities and collaborations.",
+  },
+  addressSection: {
+    title: "Address",
+    subtitle: "Islamabad, Pakistan",
+    locality: "Pakistan", // Added this
+    country: "PK", // Added this
+    region: "Islamabad", // Added this
+    postalCode: "44000", // Added this
+    avatar_image_path: "address_image.svg",
+    location_map_link: "https://maps.google.com", // Added this
+  },
+  phoneSection: {
+    title: "Phone Number", 
+    subtitle: "+92-300-1234567"
+  }
+};
+
+// Education Section - FIXED: Complete structure
 export const educationInfo = {
-  title: "Education",
-  subtitle: "ACADEMIC CAREER", 
-  schools: [
+  viewEducation: true, // Added this
+  education: [
     {
       schoolName: "University Name",
       logo: "/path/to/university-logo.png",
@@ -332,82 +385,48 @@ export const educationInfo = {
   ]
 };
 
-// Contact Page Data
-export const contactPageData = {
-  contactSection: {
-    title: "Contact Me",
-    profile_image_path: "contact.jpg",
-    description: "I'm always interested in new opportunities and collaborations.",
-  },
-  addressSection: {
-    title: "Address",
-    subtitle: "Islamabad, Pakistan",
-    avatar_image_path: "address_image.svg"
-  },
-  phoneSection: {
-    title: "Phone Number", 
-    subtitle: "+92-300-1234567"
-  }
+// Other sections with minimal required structure
+export const publicationsHeader = {
+  title: "Publications", 
+  description: "",
+  avatar_image_path: "publications_image.svg"
 };
 
-// Contact Info
-export const contactInfo = {
-  title: "Contact Me",
-  subtitle: "DISCUSS A PROJECT OR JUST WANT TO SAY HI?",
-  number: "+92-300-1234567",
-  email_address: "asimullah312@gmail.com"
+export const publications = {
+  data: []
 };
 
-// Projects Section
-export const projects = {
-  title: "Featured Projects",
-  subtitle: "MY CREATIONS AND CONTRIBUTIONS",
-  projects: [
-    {
-      name: "Multi-Cloud Kubernetes Cluster",
-      desc: "Deployed Kubernetes clusters across AWS and GCP",
-      github: "https://github.com/asimullah312/multi-cloud-k8s",
-      link: "https://github.com/asimullah312/multi-cloud-k8s"
-    },
-    {
-      name: "Automated CI/CD Pipeline", 
-      desc: "End-to-end CI/CD pipeline with Jenkins and Kubernetes",
-      github: "https://github.com/asimullah312/automated-cicd",
-      link: "https://github.com/asimullah312/automated-cicd"
-    }
-  ]
+export const openSource = {
+  githubConvertedToken: "",
+  githubUserName: "asimullah312",
 };
 
-// Blog Section
 export const blogSection = {
   title: "Blogs",
-  subtitle: "I write about DevOps and Cloud",
-  link: "https://medium.com/@asimullah312",
+  subtitle: "",
+  link: "",
   avatar_image_path: "blogs_image.svg"
 };
 
-// Podcast Section
 export const podcastSection = {
   title: "Podcast",
-  subtitle: "I talk about technology",
+  subtitle: "",
   podcast: []
 };
 
-// Talks Section
 export const talkSection = {
   title: "TALKS", 
-  subtitle: "I share my knowledge",
+  subtitle: "",
   talks: []
 };
 
-// Achievement Section
 export const achievementSection = {
   title: "ACHIEVEMENTS",
-  subtitle: "Certifications and Awards",
+  subtitle: "",
   achievementsCards: []
 };
 
-// FIXED: All exports in correct order
+// FIXED: Default export with all sections in correct order
 export default {
   splashScreen,
   settings,
@@ -419,15 +438,15 @@ export default {
   skillsSection, 
   degrees,
   certifications,
+  experience,
+  educationInfo,
   projectsHeader,
+  projects,
   publicationsHeader,
   publications,
   openSource,
-  experience,
-  educationInfo,
   contactPageData,
   contactInfo,
-  projects,
   blogSection,
   podcastSection,
   talkSection,
