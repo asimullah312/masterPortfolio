@@ -33,6 +33,38 @@ export const greeting = {
   displayGreeting: true,
 };
 
+// SEO Section
+export const seo = {
+  title: "Asim Ullah | DevOps Engineer",
+  description: "A passionate DevOps Engineer specializing in Docker, Kubernetes, CI/CD, AWS, GCP, and Cloud Infrastructure. Experienced in building scalable and automated cloud solutions.",
+  image: "https://asimullah312.github.io/profile.png",
+  url: "https://asimullah312.github.io",
+  keywords: [
+    "Asim Ullah",
+    "DevOps Engineer",
+    "Docker",
+    "Kubernetes",
+    "CI/CD",
+    "AWS",
+    "GCP",
+    "Terraform",
+    "Cloud Infrastructure",
+    "Automation",
+    "Jenkins",
+    "GitLab CI",
+    "Cloud Computing"
+  ],
+  author: "Asim Ullah",
+  twitter: "@asimullah312",
+  og: {
+    title: "Asim Ullah | DevOps Engineer",
+    type: "website",
+    url: "https://asimullah312.github.io",
+    image: "https://asimullah312.github.io/profile.png",
+    description: "A passionate DevOps Engineer specializing in Docker, Kubernetes, CI/CD, AWS, GCP, and Cloud Infrastructure."
+  }
+};
+
 // Social Media Links
 export const socialMediaLinks = {
   github: "https://github.com/asimullah312",
@@ -358,6 +390,7 @@ export const achievementSection = {
 export default {
   splashScreen,
   greeting,
+  seo,
   socialMediaLinks,
   competitiveSites,
   skillsSection,
