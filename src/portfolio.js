@@ -24,6 +24,13 @@ export const splashScreen = {
   duration: 2000,
 };
 
+// Settings
+export const settings = {
+  isSplash: true,
+  useCustomName: false,
+  themeColor: "#000000",
+};
+
 // Greeting
 export const greeting = {
   username: "Asim Ullah",
@@ -389,6 +396,7 @@ export const achievementSection = {
 
 export default {
   splashScreen,
+  settings,
   greeting,
   seo,
   socialMediaLinks,
