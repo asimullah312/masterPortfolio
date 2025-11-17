@@ -1,5 +1,5 @@
 /* Portfolio.js fixed for your website */
-
+https://github.com/asimullah312/masterPortfolio/edit/master/src/portfolio.js
 // Website settings
 const settings = {
   isSplash: true,
@@ -149,7 +149,7 @@ const contactPageData = {
 };
 
 // Projects
-const projects = {
+const projectsHeader = {
   projectsHeader: {
     title: "Projects",
     description:
@@ -236,7 +236,7 @@ export {
   degrees,
   experience,
   contactPageData,
-  projects,
+  projectsHeader,
   competitiveSites,
   certifications,
   publications,
