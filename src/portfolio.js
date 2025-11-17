@@ -1,4 +1,4 @@
-/* Portfolio.js fixed for your website */
+/* Portfolio.js - Fixed for your website */
 
 // Website settings
 const settings = {
@@ -57,7 +57,7 @@ const socialMediaLinks = [
   },
 ];
 
-// Skills
+// Skills Section
 const skillsSection = {
   data: [
     {
@@ -83,6 +83,9 @@ const skillsSection = {
     },
   ],
 };
+
+// Alias for SkillSection.js
+const skills = skillsSection;
 
 // Education Info
 const degrees = {
@@ -219,7 +222,6 @@ const publicationsHeader = {
   description:
     "Some of my publications, blogs, and articles about DevOps, cloud, and technology.",
 };
-
 const publications = {
   data: [],
 };
