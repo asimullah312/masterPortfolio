@@ -85,7 +85,7 @@ const skillsSection = {
 };
 
 // Education Info
-const educationInfo = {
+const degrees = {
   degrees: [
     {
       title: "University of Engineering and Technology Peshawar",
@@ -233,7 +233,7 @@ export {
   greeting,
   socialMediaLinks,
   skillsSection,
-  educationInfo,
+  degrees,
   workExperiences,
   contactPageData,
   projects,
