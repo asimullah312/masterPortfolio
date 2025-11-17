@@ -118,7 +118,32 @@ export const competitiveSites = {
   ]
 };
 
-// Skills / Tech Stack
+// Skills Section
+export const skills = {
+  title: "What I do",
+  subTitle: "DEVOPS ENGINEER & CLOUD ENTHUSIAST",
+  skills: [
+    "⚡ Develop and maintain CI/CD pipelines using Jenkins, GitLab CI/CD",
+    "⚡ Containerize applications using Docker and deploy to Kubernetes",
+    "⚡ Cloud infrastructure management on AWS & GCP",
+    "⚡ Infrastructure as Code using Terraform and CloudFormation",
+    "⚡ Monitoring and logging with Prometheus, Grafana, and ELK Stack",
+    "⚡ Scripting and automation with Python, Bash, and Groovy",
+  ],
+  softwareSkills: [
+    { skillName: "Docker", fontAwesomeClassname: docker },
+    { skillName: "Kubernetes", fontAwesomeClassname: kubernetes },
+    { skillName: "Terraform", fontAwesomeClassname: terraform },
+    { skillName: "AWS", fontAwesomeClassname: aws },
+    { skillName: "GCP", fontAwesomeClassname: gcpLogo },
+    { skillName: "Jenkins", fontAwesomeClassname: jenkins },
+    { skillName: "GitLab", fontAwesomeClassname: gitlab },
+    { skillName: "Python", fontAwesomeClassname: python },
+    { skillName: "Linux", fontAwesomeClassname: linux },
+  ],
+};
+
+// Skills Section (alternative name for compatibility)
 export const skillsSection = {
   title: "What I do",
   subTitle: "DEVOPS ENGINEER & CLOUD ENTHUSIAST",
@@ -401,6 +426,7 @@ export default {
   seo,
   socialMediaLinks,
   competitiveSites,
+  skills,
   skillsSection,
   degrees,
   certifications,
