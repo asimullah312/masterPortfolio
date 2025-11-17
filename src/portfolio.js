@@ -1,6 +1,5 @@
 /* Change this file to get your personal Portfolio */
 
-import emoji from "react-easy-emoji";
 import splashAnimation from "./assets/lottie/splashAnimation"; // keep your splash animation
 
 // Images
@@ -29,9 +28,7 @@ export const splashScreen = {
 export const greeting = {
   username: "Asim Ullah",
   title: "Hi all, I'm Asim",
-  subTitle: emoji(
-    "A passionate DevOps Engineer 🚀 | Docker | Kubernetes | CI/CD | Cloud Enthusiast"
-  ),
+  subTitle: "A passionate DevOps Engineer 🚀 | Docker | Kubernetes | CI/CD | Cloud Enthusiast",
   resumeLink: "https://drive.google.com/file/d/your-resume-id/view",
   displayGreeting: true,
 };
@@ -40,7 +37,7 @@ export const greeting = {
 export const socialMediaLinks = {
   github: "https://github.com/asimullah312",
   linkedin: "https://linkedin.com/in/asimullah312",
-  gmail: "asimullah312@example.com",
+  gmail: "asimullah312@gmail.com",
   twitter: "https://twitter.com/asimullah312",
 };
 
@@ -49,12 +46,12 @@ export const skillsSection = {
   title: "What I do",
   subTitle: "DEVOPS ENGINEER & CLOUD ENTHUSIAST",
   skills: [
-    emoji("⚡ Develop and maintain CI/CD pipelines using Jenkins, GitLab CI/CD"),
-    emoji("⚡ Containerize applications using Docker and deploy to Kubernetes"),
-    emoji("⚡ Cloud infrastructure management on AWS & GCP"),
-    emoji("⚡ Infrastructure as Code using Terraform and CloudFormation"),
-    emoji("⚡ Monitoring and logging with Prometheus, Grafana, and ELK Stack"),
-    emoji("⚡ Scripting and automation with Python, Bash, and Groovy"),
+    "⚡ Develop and maintain CI/CD pipelines using Jenkins, GitLab CI/CD",
+    "⚡ Containerize applications using Docker and deploy to Kubernetes",
+    "⚡ Cloud infrastructure management on AWS & GCP",
+    "⚡ Infrastructure as Code using Terraform and CloudFormation",
+    "⚡ Monitoring and logging with Prometheus, Grafana, and ELK Stack",
+    "⚡ Scripting and automation with Python, Bash, and Groovy",
   ],
   softwareSkills: [
     { skillName: "Docker", fontAwesomeClassname: docker },
