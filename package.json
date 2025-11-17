@@ -13,7 +13,7 @@
     "fetch-github-data": "node git_data_fetcher.mjs"
   },
   "dependencies": {
-    "baseui": "^12.3.0",
+    "baseui": "^12.0.0",
     "chart.js": "^4.4.0",
     "gh-pages": "^6.1.1",
     "react": "^18.2.0",
