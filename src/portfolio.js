@@ -207,7 +207,31 @@ export const educationInfo = {
   ],
 };
 
-// Contact Section
+// Contact Page Data
+export const contactPageData = {
+  contactSection: {
+    title: "Contact Me",
+    profile_image_path: "contact.jpg",
+    description: "I'm always interested in new opportunities and collaborations. Feel free to reach out to me for any DevOps, cloud, or automation projects.",
+  },
+  addressSection: {
+    title: "Address",
+    subtitle: "Islamabad, Pakistan",
+    locality: "Pakistan",
+    country: "PK",
+    region: "Islamabad",
+    postalCode: "44000",
+    streetAddress: "Street Address",
+    avatar_image_path: "address_image.svg",
+    location_map_link: "https://maps.google.com",
+  },
+  phoneSection: {
+    title: "Phone Number",
+    subtitle: "+92-300-1234567",
+  },
+};
+
+// Contact Info
 export const contactInfo = {
   title: "Contact Me",
   subtitle: "DISCUSS A PROJECT OR JUST WANT TO SAY HI? MY INBOX IS OPEN FOR ALL.",
@@ -259,6 +283,20 @@ export const podcastSection = {
   podcast: []
 };
 
+// Talks Section
+export const talkSection = {
+  title: "TALKS",
+  subtitle: "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE",
+  talks: []
+};
+
+// Achievement Section
+export const achievementSection = {
+  title: "ACHIEVEMENTS AND CERTIFICATIONS",
+  subtitle: "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done!",
+  achievementsCards: []
+};
+
 export default {
   splashScreen,
   greeting,
@@ -269,8 +307,11 @@ export default {
   openSource,
   experience,
   educationInfo,
+  contactPageData,
   contactInfo,
   projects,
   blogSection,
-  podcastSection
+  podcastSection,
+  talkSection,
+  achievementSection
 };
